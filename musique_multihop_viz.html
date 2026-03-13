@@ -1,0 +1,2111 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<meta charset='UTF-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<title>Multi-hop QA Batch Results</title>
+<style>
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 20px; background: #f5f5f5; }
+h1 { color: #333; border-bottom: 3px solid #4CAF50; padding-bottom: 10px; }
+.summary { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; }
+.context-card { background: white; margin: 20px 0; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+.context-header { border-left: 4px solid #2196F3; padding-left: 15px; margin-bottom: 15px; }
+.context-text { font-size: 14px; line-height: 1.8; margin: 15px 0; padding: 15px; background: #f9f9f9; border-radius: 5px; }
+mark { background-color: #fff3bf; padding: 0 2px; border-radius: 2px; color: #856404; font-weight: 500; }
+.qa-section { margin: 15px 0; padding: 15px; background: #fff; border-radius: 5px; border-left: 3px solid #4CAF50; }
+.qa-header { font-weight: bold; color: #333; margin-bottom: 10px; }
+.triplet { font-family: monospace; padding: 5px 10px; background: #e3f2fd; border-radius: 3px; margin: 3px 0; display: inline-block; }
+.qa-item { margin: 10px 0; padding: 10px; background: #f5f5f5; border-radius: 5px; }
+.question { font-weight: bold; color: #333; margin-bottom: 5px; }
+.answer { color: #4CAF50; font-weight: 500; }
+.query-type { display: inline-block; padding: 3px 8px; background: #2196F3; color: white; border-radius: 3px; font-size: 12px; margin-right: 5px; }
+.no-qa { color: #999; font-style: italic; }
+.stats { display: flex; gap: 20px; flex-wrap: wrap; }
+.stat { text-align: center; }
+.stat-value { font-size: 24px; font-weight: bold; color: #4CAF50; }
+.stat-label { font-size: 12px; color: #666; }
+</style>
+</head>
+<body>
+<h1>Multi-hop QA Batch Results</h1>
+<div class='summary'>
+<h2>Summary</h2>
+<div class='stats'>
+<div class='stat'><div class='stat-value'>15</div><div class='stat-label'>Contexts</div></div>
+<div class='stat'><div class='stat-value'>200</div><div class='stat-label'>Total Paths</div></div>
+<div class='stat'><div class='stat-value'>200</div><div class='stat-label'>With QA</div></div>
+</div>
+<p style='margin-top:15px;'><strong>Generated:</strong> 2026-03-13 10:53:38</p>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 1: Chibuto District</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 13 | <strong>Questions:</strong> 3</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/><mark><mark>Chibuto</mark></mark> District is a district of Gaza Province in south-western Mozambique. Its principal town is <mark><mark>Chibuto</mark></mark>. The district is located at the south of <mark>the province</mark>, and borders with Chigubo District in the north, Panda District of Inhambane Province in the east, Manjacaze District in the southeast, Xai-Xai District in the south, Chókwè District in the southwest, and Guijá District in the west. The area of the district is . It has a population of 197,214 as of 2007.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chibuto District → capital → Chibuto</span>
+<span class='triplet'>Chibuto District → location → The province</span>
+</div>
+<div class='question'>Q: What is the capital of Chibuto District, which is located in the province?</div>
+<div class='answer'>A: Chibuto</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chibuto District → capital → Chibuto</span>
+</div>
+<div class='question'>Q: What is the capital of Chibuto District?</div>
+<div class='answer'>A: Chibuto</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chibuto District → location → The province</span>
+</div>
+<div class='question'>Q: In which province is Chibuto District located?</div>
+<div class='answer'>A: The province</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 2: Quzhou Airport</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 14 | <strong>Questions:</strong> 29</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Quzhou Airport</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> () is a dual-use military and civil airport serving the city of Quzhou in Zhejiang Province, China. The airport is located 2.9 kilometers east of the city center and was opened to civil flights on <mark><mark><mark>26 November 1993</mark></mark></mark>. The public terminal is unique in being <mark><mark>separated by a lake from the two aircraft bays</mark></mark>, requiring passengers to walk across a <mark><mark><mark><mark>lengthy causeway</mark></mark></mark></mark>.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>comp</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → China</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: Which is located in China, Quzhou Airport or 2.9 kilometers?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+<span class='triplet'>Quzhou Airport → location → Quzhou</span>
+</div>
+<div class='question'>Q: Which is located in Quzhou, Quzhou Airport or 2.9 kilometers?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+<span class='triplet'>Quzhou Airport → location → Zhejiang Province</span>
+</div>
+<div class='question'>Q: Which is located in Zhejiang Province, Quzhou Airport or 2.9 kilometers?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 15 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → location → China</span>
+</div>
+<div class='question'>Q: Which airport has the facility lengthy causeway and is located in China?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → location → Quzhou</span>
+</div>
+<div class='question'>Q: Which airport has the facility lengthy causeway and is located in Quzhou?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → location → Zhejiang Province</span>
+</div>
+<div class='question'>Q: Which airport has the facility lengthy causeway and is located in Zhejiang Province?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: Which airport has the facility lengthy causeway and is characterized by being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+</div>
+<div class='question'>Q: Which airport has the facility lengthy causeway and was inaugurated on 26 November 1993?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → China</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: Which airport is located in China and is characterized by being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → China</span>
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+</div>
+<div class='question'>Q: Which airport is located in China and was opened on 26 November 1993?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → Quzhou</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: Which airport is located in Quzhou and is characterized by being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → Quzhou</span>
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+</div>
+<div class='question'>Q: Which airport is located in Quzhou and was opened on 26 November 1993?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+<span class='triplet'>Quzhou Airport → location → Zhejiang Province</span>
+</div>
+<div class='question'>Q: Which airport was opened on 26 November 1993 and is located in Zhejiang Province?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: Which airport, inaugurated on 26 November 1993, is described as being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → Zhejiang Province</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: Which airport located in Zhejiang Province is noted for being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: Which airport, which has a lengthy causeway, is identified as the location for the 2.9‑kilometer measurement?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: Which airport, opened on 26 November 1993, is the location referred to by the 2.9‑kilometer distance?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: Which airport, described as being separated by a lake from the two aircraft bays, is also the location associated with the 2.9‑kilometer distance?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 6 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: What facility at Quzhou Airport is described by the characteristic of being separated by a lake from the two aircraft bays?</div>
+<div class='answer'>A: lengthy causeway</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+</div>
+<div class='question'>Q: Which facility at Quzhou Airport was present when it opened on 26 November 1993?</div>
+<div class='answer'>A: lengthy causeway</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: On what date did Quzhou Airport, which is separated by a lake from the two aircraft bays, begin civil operations?</div>
+<div class='answer'>A: 26 November 1993</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: What facility at Quzhou Airport is located 2.9 kilometers east of the city center?</div>
+<div class='answer'>A: lengthy causeway</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: When was Quzhou Airport, which lies 2.9 kilometers east of the city centre, opened to civil flights?</div>
+<div class='answer'>A: 26 November 1993</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: What characteristic does Quzhou Airport, situated 2.9 kilometers east of the city centre, have regarding its passenger terminal?</div>
+<div class='answer'>A: separated by a lake from the two aircraft bays</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → location → China</span>
+<span class='triplet'>Quzhou Airport → location → Quzhou</span>
+<span class='triplet'>Quzhou Airport → location → Zhejiang Province</span>
+</div>
+<div class='question'>Q: In which locations is Quzhou Airport situated?</div>
+<div class='answer'>A: China, Quzhou, Zhejiang Province</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 4 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has facility → lengthy causeway</span>
+</div>
+<div class='question'>Q: What facility does Quzhou Airport have?</div>
+<div class='answer'>A: lengthy causeway</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>2.9 kilometers → location → Quzhou Airport</span>
+</div>
+<div class='question'>Q: Where is 2.9 kilometers located?</div>
+<div class='answer'>A: Quzhou Airport</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → inception → 26 November 1993</span>
+</div>
+<div class='question'>Q: When was Quzhou Airport inaugurated?</div>
+<div class='answer'>A: 26 November 1993</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Quzhou Airport → has characteristic → separated by a lake from the two aircraft bays</span>
+</div>
+<div class='question'>Q: What characteristic describes Quzhou Airport's terminal layout?</div>
+<div class='answer'>A: separated by a lake from the two aircraft bays</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 3: India–Pakistan border</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 16 | <strong>Questions:</strong> 5</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>The <mark>India and Pakistan Border</mark>, known locally as the International Border (IB), is an international border running between India and Pakistan that demarcates the <mark>Indian states</mark> and the four provinces of Pakistan. The border runs from the <mark><mark>Line of Control</mark></mark> (LoC), which separates the Indian controlled Kashmir from Pakistan controlled Kashmir, in the north, to Wagah, which partitioned the Indian Punjab state and Punjab Province of Pakistan, in the east. The Zero Point separates the <mark>Indian states</mark> of Gujarat and Rajasthan to Sindh province of Pakistan, in the south.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>India and Pakistan Border → has boundary → Indian states</span>
+<span class='triplet'>India and Pakistan Border → connects with → Line of Control</span>
+</div>
+<div class='question'>Q: Which border has a boundary with the Indian states and also connects with the Line of Control?</div>
+<div class='answer'>A: India and Pakistan Border</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>India and Pakistan Border → has boundary → Indian states</span>
+<span class='triplet'>India and Pakistan Border → connects with → Line of Control</span>
+</div>
+<div class='question'>Q: What is the name of the feature that the entity, which has Indian states as its boundary, connects with?</div>
+<div class='answer'>A: Line of Control</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zero Point → shares border with → Sindh province of Pakistan</span>
+<span class='triplet'>Zero Point → shares border with → Gujarat</span>
+<span class='triplet'>Zero Point → shares border with → Rajasthan</span>
+</div>
+<div class='question'>Q: Which places share a border with Zero Point?</div>
+<div class='answer'>A: Sindh province of Pakistan, Gujarat, Rajasthan</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>India and Pakistan Border → has boundary → Indian states</span>
+</div>
+<div class='question'>Q: What does the India and Pakistan Border have as its boundary?</div>
+<div class='answer'>A: Indian states</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>India and Pakistan Border → connects with → Line of Control</span>
+</div>
+<div class='question'>Q: What does the India and Pakistan Border connect with?</div>
+<div class='answer'>A: Line of Control</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 4: Zhejiang</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 17 | <strong>Questions:</strong> 17</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>Zhejiang was part of the Wu during the Three Kingdoms. Wu (229–280), commonly known as Eastern Wu or Sun Wu, had been the economically most developed state among the Three Kingdoms (220–280 CE). The historical novel Romance of the Three Kingdoms records that Zhejiang had the best-equipped, strong navy force. The story depicts how the states of <mark>Wei</mark> (魏) and <mark><mark><mark>Shu</mark></mark></mark> (蜀), lack of <mark><mark>material resources</mark></mark>, avoided direct confrontation with the Wu. In armed military conflicts with Wu, the two states relied intensively on <mark><mark><mark>tactics of camouflage and deception</mark></mark></mark> to steal Wu's military resources including arrows and bows.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>bamboo</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>material resources → characteristic of → Shu</span>
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+</div>
+<div class='question'>Q: What does Wu have use of, in the context where material resources are characteristic of Shu and Shu physically interacts with Wu?</div>
+<div class='answer'>A: tactics of camouflage and deception</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>material resources → characteristic of → Shu</span>
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+</div>
+<div class='question'>Q: What does Wu have use of, in the context where material resources are characteristic of Shu and Shu physically interacts with Wu?</div>
+<div class='answer'>A: tactics of camouflage and deception</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>comp</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>Wei → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state is listed first as physically interacting with Wu, Shu or Wei?</div>
+<div class='answer'>A: Shu</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 6 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>229-280 → valid in place → Wu</span>
+<span class='triplet'>Wei → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state was both valid in place during 229‑280 and physically interacted with by Wei?</div>
+<div class='answer'>A: Wu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>229-280 → valid in place → Wu</span>
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state was valid in place during 229‑280 and also physically interacted with by Shu?</div>
+<div class='answer'>A: Wu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+<span class='triplet'>229-280 → valid in place → Wu</span>
+</div>
+<div class='question'>Q: Which entity both has the use of tactics of camouflage and deception and was valid in place during 229‑280?</div>
+<div class='answer'>A: Wu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+<span class='triplet'>Wei → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state both uses tactics of camouflage and deception and is physically interacted with by Wei?</div>
+<div class='answer'>A: Wu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state both employs tactics of camouflage and deception and is physically interacted with by Shu?</div>
+<div class='answer'>A: Wu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>material resources → characteristic of → Shu</span>
+</div>
+<div class='question'>Q: Which entity both physically interacts with Wu and has material resources as its characteristic?</div>
+<div class='answer'>A: Shu</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+<span class='triplet'>229-280 → valid in place → Wu</span>
+</div>
+<div class='question'>Q: During which period did Wu, which employed tactics of camouflage and deception, exist?</div>
+<div class='answer'>A: 229-280</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>material resources → characteristic of → Shu</span>
+</div>
+<div class='question'>Q: What is characteristic of Shu, which physically interacts with Wu?</div>
+<div class='answer'>A: material resources</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+<span class='triplet'>Wei → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which states physically interact with Wu?</div>
+<div class='answer'>A: Shu, Wei</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 5 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wu → has use → tactics of camouflage and deception</span>
+</div>
+<div class='question'>Q: What does Wu use?</div>
+<div class='answer'>A: tactics of camouflage and deception</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>material resources → characteristic of → Shu</span>
+</div>
+<div class='question'>Q: What is characteristic of Shu?</div>
+<div class='answer'>A: material resources</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>229-280 → valid in place → Wu</span>
+</div>
+<div class='question'>Q: What time span was valid for Wu?</div>
+<div class='answer'>A: 229-280</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Shu → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state physically interacts with Wu?</div>
+<div class='answer'>A: Shu</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Wei → physically interacts with → Wu</span>
+</div>
+<div class='question'>Q: Which state physically interacts with Wu?</div>
+<div class='answer'>A: Wei</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 5: Zhejiang</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 18 | <strong>Questions:</strong> 16</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>The province is traditionally known as the "<mark><mark>Land of Fish and Rice</mark></mark>". True to its name, rice is the main crop, followed by wheat; north <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Zhejiang</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> is also a center of aquaculture in China, and the Zhoushan fishery is the largest fishery in the country. The main cash crops include jute and cotton, and the province also leads the provinces of China in tea production. (The renowned Longjing tea is a product of Hangzhou.) <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Zhejiang</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark>'s towns have been known for handicraft production of goods such as silk, for which it is ranked second among the provinces. Its many market towns connect the cities with the countryside.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 11 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and is named after the Land of Fish and Rice?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → product or material produced → silk</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and also produces silk?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → product or material produced → tea</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and also produces tea?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → product or material produced → wheat</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and also produces wheat?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → product or material produced → jute</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and also produces jute?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → product or material produced → rice</span>
+</div>
+<div class='question'>Q: Which province is the subject of the largest fishery and also produces rice?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → product or material produced → jute</span>
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+</div>
+<div class='question'>Q: Which province is named after the Land of Fish and Rice and also produces jute?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+<span class='triplet'>Zhejiang → product or material produced → silk</span>
+</div>
+<div class='question'>Q: Which province is named after the Land of Fish and Rice and also produces silk?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+<span class='triplet'>Zhejiang → product or material produced → tea</span>
+</div>
+<div class='question'>Q: Which province is named after the Land of Fish and Rice and also produces tea?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+<span class='triplet'>Zhejiang → product or material produced → wheat</span>
+</div>
+<div class='question'>Q: Which province is named after the Land of Fish and Rice and also produces wheat?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+<span class='triplet'>Zhejiang → product or material produced → rice</span>
+</div>
+<div class='question'>Q: Which province is named after the "Land of Fish and Rice" and also produces rice as a main crop?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+</div>
+<div class='question'>Q: What nickname, reflecting its aquatic abundance, is given to Zhejiang?</div>
+<div class='answer'>A: Land of Fish and Rice</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → product or material produced → jute</span>
+<span class='triplet'>Zhejiang → product or material produced → wheat</span>
+<span class='triplet'>Zhejiang → product or material produced → silk</span>
+<span class='triplet'>Zhejiang → product or material produced → rice</span>
+<span class='triplet'>Zhejiang → product or material produced → tea</span>
+</div>
+<div class='question'>Q: Which products or materials are produced in Zhejiang?</div>
+<div class='answer'>A: jute, wheat, silk, rice, tea</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>aquaculture → operating area → north Zhejiang</span>
+</div>
+<div class='question'>Q: What is the operating area of aquaculture?</div>
+<div class='answer'>A: north Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → statement is subject of → largest fishery</span>
+</div>
+<div class='question'>Q: Which province is the subject of the statement about the largest fishery?</div>
+<div class='answer'>A: Zhejiang</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Zhejiang → named after → Land of Fish and Rice</span>
+</div>
+<div class='question'>Q: Zhejiang is named after what?</div>
+<div class='answer'>A: Land of Fish and Rice</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 6: Hokkien</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 19 | <strong>Questions:</strong> 9</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>In 677 (during the reign of <mark>Emperor Gaozong</mark>), <mark><mark>Chen Zheng</mark></mark> (陳政), together with his son Chen Yuanguang (陳元光), led a military expedition to pacify the rebellion in Fujian. They settled in <mark>Zhangzhou</mark> and brought the Middle Chinese phonology of northern <mark><mark>China</mark></mark> during the 7th century into <mark>Zhangzhou</mark>; In 885, (during the reign of Emperor Xizong of Tang), the two brothers Wang Chao (王潮) and Wang Shenzhi (王審知), led a military expedition force to pacify the Huang Chao rebellion. They brought the Middle Chinese phonology commonly spoken in Northern <mark><mark>China</mark></mark> into <mark>Zhangzhou</mark>. These two waves of migrations from the north generally brought the language of northern Middle Chinese into the Fujian region. This then gradually evolved into the <mark><mark>Zhangzhou</mark> dialect</mark>.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>comp</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Emperor Gaozong → valid in place → China</span>
+<span class='triplet'>Emperor Xizong of Tang → valid in place → China</span>
+</div>
+<div class='question'>Q: Which emperor is noted as being valid in place in China, Emperor Gaozong or Emperor Xizong of Tang?</div>
+<div class='answer'>A: Emperor Gaozong</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chen Zheng → residence → Zhangzhou</span>
+<span class='triplet'>rebellion in Fujian → agent of action → Chen Zheng</span>
+</div>
+<div class='question'>Q: Who was the agent of action for the rebellion in Fujian and also had residence in Zhangzhou?</div>
+<div class='answer'>A: Chen Zheng</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chen Zheng → residence → Zhangzhou</span>
+<span class='triplet'>rebellion in Fujian → agent of action → Chen Zheng</span>
+</div>
+<div class='question'>Q: Who was the agent of action in the Fujian rebellion and also had residence in Zhangzhou?</div>
+<div class='answer'>A: Chen Zheng</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>rebellion in Fujian → agent of action → Wang Chao</span>
+<span class='triplet'>rebellion in Fujian → agent of action → Chen Zheng</span>
+</div>
+<div class='question'>Q: Who were the agents of action of the rebellion in Fujian?</div>
+<div class='answer'>A: Wang Chao, Chen Zheng</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Emperor Gaozong → valid in place → China</span>
+<span class='triplet'>Emperor Xizong of Tang → valid in place → China</span>
+</div>
+<div class='question'>Q: Which emperors were valid in place in China?</div>
+<div class='answer'>A: Emperor Gaozong, Emperor Xizong of Tang</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 4 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Emperor Gaozong → valid in place → China</span>
+</div>
+<div class='question'>Q: In which place was Emperor Gaozong valid?</div>
+<div class='answer'>A: China</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Middle Chinese phonology of northern China → develops from → Zhangzhou dialect</span>
+</div>
+<div class='question'>Q: From which dialect does the Middle Chinese phonology of northern China develop?</div>
+<div class='answer'>A: Zhangzhou dialect</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Chen Zheng → residence → Zhangzhou</span>
+</div>
+<div class='question'>Q: Where was Chen Zheng's residence?</div>
+<div class='answer'>A: Zhangzhou</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Emperor Xizong of Tang → valid in place → China</span>
+</div>
+<div class='question'>Q: In which place was Emperor Xizong of Tang valid?</div>
+<div class='answer'>A: China</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 7: Manitoba Highway 89</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 2 | <strong>Questions:</strong> 16</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/><mark><mark><mark><mark><mark><mark><mark><mark><mark>Provincial Trunk Highway 89</mark></mark></mark></mark></mark></mark></mark></mark></mark> (PTH 89) is a provincial highway in the Canadian province of Manitoba. The entire road lies within the <mark>Rural Municipality of <mark><mark>Piney</mark></mark></mark> and is long. It runs from PTH 12 south to <mark><mark>Piney</mark></mark> and the U.S. border. South of the border it becomes <mark>Minnesota State Highway 89</mark>.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 9 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → PTH 12</span>
+</div>
+<div class='question'>Q: Which highway is part of the Rural Municipality of Piney and connects with PTH 12?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → U.S. border</span>
+</div>
+<div class='question'>Q: Which highway is part of the Rural Municipality of Piney and connects with the U.S. border?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which highway is part of the Rural Municipality of Piney and follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+</div>
+<div class='question'>Q: Which highway is part of the Rural Municipality of Piney and is located in the administrative territorial entity Piney?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → PTH 12</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which highway connects with PTH 12 and follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → PTH 12</span>
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+</div>
+<div class='question'>Q: Which highway connects with PTH 12 and is located in the administrative territorial entity Piney?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → U.S. border</span>
+</div>
+<div class='question'>Q: Which highway is located in the administrative territorial entity Piney and connects with the U.S. border?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which highway is located in the administrative territorial entity Piney and follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → U.S. border</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which highway connects with the U.S. border and follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Provincial Trunk Highway 89</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which municipality is Provincial Trunk Highway 89 a part of, given that it follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Rural Municipality of Piney</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+</div>
+<div class='question'>Q: Which municipality does Provincial Trunk Highway 89 belong to, considering it is located in Piney?</div>
+<div class='answer'>A: Rural Municipality of Piney</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Which administrative territorial entity contains Provincial Trunk Highway 89, knowing that the highway follows Minnesota State Highway 89?</div>
+<div class='answer'>A: Piney</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → PTH 12</span>
+<span class='triplet'>Provincial Trunk Highway 89 → connects with → U.S. border</span>
+</div>
+<div class='question'>Q: What does Provincial Trunk Highway 89 connect with?</div>
+<div class='answer'>A: PTH 12, U.S. border</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → part of → Rural Municipality of Piney</span>
+</div>
+<div class='question'>Q: Provincial Trunk Highway 89 is part of which rural municipality?</div>
+<div class='answer'>A: Rural Municipality of Piney</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → located in the administrative territorial entity → Piney</span>
+</div>
+<div class='question'>Q: In which administrative territorial entity is Provincial Trunk Highway 89 located?</div>
+<div class='answer'>A: Piney</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Provincial Trunk Highway 89 → follows → Minnesota State Highway 89</span>
+</div>
+<div class='question'>Q: Provincial Trunk Highway 89 follows which highway?</div>
+<div class='answer'>A: Minnesota State Highway 89</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 8: Đức Huệ District</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 3 | <strong>Questions:</strong> 6</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>Đức Huệ is a rural district of Long An Province in the <mark>Mekong Delta</mark> region of Vietnam. It has a western border with Cambodia; a southwest border with Thạnh Hóa District; an eastern border with Đức Hòa District; and a south and southeast border with Thủ Thừa District and Bến Lức District.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 4 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → shares border with → Duc Hoa District</span>
+<span class='triplet'>Duc Hue → location → Mekong Delta</span>
+</div>
+<div class='question'>Q: Which district is located in the Mekong Delta and shares a border with Duc Hoa District?</div>
+<div class='answer'>A: Duc Hue</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → location → Mekong Delta</span>
+<span class='triplet'>Duc Hue → shares border with → Ben Luc District</span>
+</div>
+<div class='question'>Q: Which district is located in the Mekong Delta and shares a border with Ben Luc District?</div>
+<div class='answer'>A: Duc Hue</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → location → Mekong Delta</span>
+<span class='triplet'>Duc Hue → shares border with → Cambodia</span>
+</div>
+<div class='question'>Q: Which district is located in the Mekong Delta and shares a border with Cambodia?</div>
+<div class='answer'>A: Duc Hue</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → location → Mekong Delta</span>
+<span class='triplet'>Duc Hue → shares border with → Thanh Hoa District</span>
+</div>
+<div class='question'>Q: Which district is located in the Mekong Delta and shares a border with Thanh Hoa District?</div>
+<div class='answer'>A: Duc Hue</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → shares border with → Duc Hoa District</span>
+<span class='triplet'>Duc Hue → shares border with → Cambodia</span>
+<span class='triplet'>Duc Hue → shares border with → Thanh Hoa District</span>
+<span class='triplet'>Duc Hue → shares border with → Ben Luc District</span>
+</div>
+<div class='question'>Q: What places share a border with Duc Hue?</div>
+<div class='answer'>A: Duc Hoa District, Cambodia, Thanh Hoa District, Ben Luc District</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Duc Hue → location → Mekong Delta</span>
+</div>
+<div class='question'>Q: In which region is Duc Hue located?</div>
+<div class='answer'>A: Mekong Delta</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 9: Zhejiang</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 4 | <strong>Questions:</strong> 3</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>Zhejiang (help·info), formerly romanized as Chekiang, is an eastern coastal province of China. Zhejiang is bordered by Jiangsu province and Shanghai municipality to the north, Anhui province to the northwest, Jiangxi province to the west, and Fujian province to the south; to the east is the <mark>East China Sea</mark>, beyond which lie the <mark>Ryukyu Islands</mark> of <mark>Japan</mark>.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>comp</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ryukyu Islands → location → Japan</span>
+<span class='triplet'>East China Sea → location → Ryukyu Islands</span>
+</div>
+<div class='question'>Q: Which of the two is located within the other: the Ryukyu Islands or the East China Sea?</div>
+<div class='answer'>A: East China Sea</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ryukyu Islands → location → Japan</span>
+</div>
+<div class='question'>Q: In which country are the Ryukyu Islands located?</div>
+<div class='answer'>A: Japan</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>East China Sea → location → Ryukyu Islands</span>
+</div>
+<div class='question'>Q: Which islands are located in the East China Sea?</div>
+<div class='answer'>A: Ryukyu Islands</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 10: Bilene Macia District</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 5 | <strong>Questions:</strong> 19</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Bilene <mark><mark><mark>Macia</mark></mark></mark> District</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> is a district of <mark>Gaza Province</mark> in south-western Mozambique. Its principal town is <mark><mark><mark>Macia</mark></mark></mark>. The district is located at the south of the province, and borders with Chókwè District in the north, Xai-Xai District in the east, and Magude District of Maputo Province in the west. In the south, the district is bounded by the <mark><mark>Indian Ocean</mark></mark>. The area of the district is . It has a population of 151911 as of 2007.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 12 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → shares border with → Chokwe District</span>
+</div>
+<div class='question'>Q: Which district has its capital at Macia and shares a border with Chokwe District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → shares border with → Magude District</span>
+</div>
+<div class='question'>Q: Which district has its capital at Macia and shares a border with Magude District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → shares border with → Xai-Xai District</span>
+</div>
+<div class='question'>Q: Which district has its capital at Macia and shares a border with Xai-Xai District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+</div>
+<div class='question'>Q: Which district has its capital at Macia and is bounded by the Indian Ocean?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+</div>
+<div class='question'>Q: Which district has its capital at Macia and is located in Gaza Province?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+<span class='triplet'>Bilene Macia District → shares border with → Chokwe District</span>
+</div>
+<div class='question'>Q: Which district is bounded by the Indian Ocean and shares a border with Chokwe District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+<span class='triplet'>Bilene Macia District → shares border with → Magude District</span>
+</div>
+<div class='question'>Q: Which district is bounded by the Indian Ocean and shares a border with Magude District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+<span class='triplet'>Bilene Macia District → shares border with → Xai-Xai District</span>
+</div>
+<div class='question'>Q: Which district is bounded by the Indian Ocean and shares a border with Xai-Xai District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+</div>
+<div class='question'>Q: Which district is bounded by the Indian Ocean and is located in Gaza Province?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+<span class='triplet'>Bilene Macia District → shares border with → Chokwe District</span>
+</div>
+<div class='question'>Q: Which district is located in Gaza Province and shares a border with Chokwe District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+<span class='triplet'>Bilene Macia District → shares border with → Magude District</span>
+</div>
+<div class='question'>Q: Which district that is located in Gaza Province also shares a border with Magude District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+<span class='triplet'>Bilene Macia District → shares border with → Xai-Xai District</span>
+</div>
+<div class='question'>Q: Which district that is located in Gaza Province also shares a border with Xai-Xai District?</div>
+<div class='answer'>A: Bilene Macia District</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+</div>
+<div class='question'>Q: What is the capital of Bilene Macia District, which is located on the Indian Ocean?</div>
+<div class='answer'>A: Macia</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+</div>
+<div class='question'>Q: Which town serves as the capital of Bilene Macia District, situated in Gaza Province?</div>
+<div class='answer'>A: Macia</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+</div>
+<div class='question'>Q: Which body of water borders Bilene Macia District, which lies within Gaza Province?</div>
+<div class='answer'>A: Indian Ocean</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → shares border with → Chokwe District</span>
+<span class='triplet'>Bilene Macia District → shares border with → Xai-Xai District</span>
+<span class='triplet'>Bilene Macia District → shares border with → Magude District</span>
+</div>
+<div class='question'>Q: Which districts share a border with Bilene Macia District?</div>
+<div class='answer'>A: Chokwe District, Xai-Xai District, Magude District</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 3 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → capital → Macia</span>
+</div>
+<div class='question'>Q: What is the capital of Bilene Macia District?</div>
+<div class='answer'>A: Macia</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → located in/on physical feature → Indian Ocean</span>
+</div>
+<div class='question'>Q: On which physical feature is Bilene Macia District located?</div>
+<div class='answer'>A: Indian Ocean</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bilene Macia District → location → Gaza Province</span>
+</div>
+<div class='question'>Q: In which province is Bilene Macia District located?</div>
+<div class='answer'>A: Gaza Province</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 11: Newton–Jenney Party</h3>
+<p><strong>Entry:</strong> 2hop__10017_18974 | <strong>Page:</strong> 6 | <strong>Questions:</strong> 14</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>The Newton–Jenney Party of 1875, led by Henry Newton and Walter P. Jenney, and escorted by a military detachment led by Lieutenant Colonel Richard I. Dodge, and known also as the Jenney-Newton Party, was a scientific expedition sponsored by the United States Geological Survey to map the Black Hills of South Dakota. The Newton-Jenney expedition was established in response to the <mark><mark>Black Hills Gold Rush</mark></mark>, which had been escalated the previous year by General George Armstrong Custer's expedition into the Black Hills. The Newton–Jenney Party included many figures who would gain notoriety in the 19th century, including Calamity Jane, Dr. Valentine McGillycuddy, and California Joe Milner. The expedition confirmed Custer's claims of gold and prompted an increase of miners in the Black Hills region, which in turn antagonized events leading to the Great Sioux War of 1876-77.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 10 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → commanded by → Richard I. Dodge</span>
+<span class='triplet'>Newton-Jenney Party → has cause → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which expedition was commanded by Richard I. Dodge and had the Black Hills Gold Rush as its cause?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → commanded by → Richard I. Dodge</span>
+<span class='triplet'>Newton-Jenney Party → has effect → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which expedition was commanded by Richard I. Dodge and produced the Black Hills Gold Rush as its effect?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → commanded by → Richard I. Dodge</span>
+<span class='triplet'>Newton-Jenney Party → has goal → map the Black Hills of South Dakota</span>
+</div>
+<div class='question'>Q: Which expedition was commanded by Richard I. Dodge and had the goal of mapping the Black Hills of South Dakota?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → commanded by → Richard I. Dodge</span>
+<span class='triplet'>Newton-Jenney Party → sponsor → United States Geological Survey</span>
+</div>
+<div class='question'>Q: Which expedition was commanded by Richard I. Dodge and was sponsored by the United States Geological Survey?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → has goal → map the Black Hills of South Dakota</span>
+<span class='triplet'>Newton-Jenney Party → commanded by → Henry Newton</span>
+</div>
+<div class='question'>Q: Which expedition had the goal of mapping the Black Hills of South Dakota and was commanded by Henry Newton?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → has goal → map the Black Hills of South Dakota</span>
+<span class='triplet'>Newton-Jenney Party → has cause → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which expedition had the goal of mapping the Black Hills of South Dakota and its cause was the Black Hills Gold Rush?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → has goal → map the Black Hills of South Dakota</span>
+<span class='triplet'>Newton-Jenney Party → has effect → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which expedition had the goal of mapping the Black Hills of South Dakota and had the Black Hills Gold Rush as its effect?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → has goal → map the Black Hills of South Dakota</span>
+<span class='triplet'>Newton-Jenney Party → sponsor → United States Geological Survey</span>
+</div>
+<div class='question'>Q: Which expedition had the goal of mapping the Black Hills of South Dakota and was sponsored by the United States Geological Survey?</div>
+<div class='answer'>A: Newton-Jenney Party</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Black Hills Gold Rush → has effect → Great Sioux War of 1876-77</span>
+<span class='triplet'>Black Hills Gold Rush → has cause → General George Armstrong Custer's expedition</span>
+</div>
+<div class='question'>Q: Which event had the Great Sioux War of 1876-77 as its effect and was caused by General George Armstrong Custer's expedition?</div>
+<div class='answer'>A: Black Hills Gold Rush</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Black Hills Gold Rush → has cause → General George Armstrong Custer's expedition</span>
+<span class='triplet'>Black Hills Gold Rush → has effect → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which phenomenon was caused by General George Armstrong Custer's expedition and had itself as its effect?</div>
+<div class='answer'>A: Black Hills Gold Rush</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 4 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → commanded by → Richard I. Dodge</span>
+<span class='triplet'>Newton-Jenney Party → commanded by → Henry Newton</span>
+</div>
+<div class='question'>Q: Who commanded the Newton-Jenney Party?</div>
+<div class='answer'>A: Richard I. Dodge, Henry Newton</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Black Hills Gold Rush → has effect → Great Sioux War of 1876-77</span>
+<span class='triplet'>Black Hills Gold Rush → has effect → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: What events were effects of the Black Hills Gold Rush?</div>
+<div class='answer'>A: Great Sioux War of 1876-77, Black Hills Gold Rush</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Dr. Valentine McGillycuddy → participant in → Newton-Jenney Party</span>
+<span class='triplet'>California Joe Milner → participant in → Newton-Jenney Party</span>
+<span class='triplet'>Calamity Jane → participant in → Newton-Jenney Party</span>
+</div>
+<div class='question'>Q: Who participated in the Newton-Jenney Party?</div>
+<div class='answer'>A: Dr. Valentine McGillycuddy, California Joe Milner, Calamity Jane</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Newton-Jenney Party → has effect → Black Hills Gold Rush</span>
+<span class='triplet'>Black Hills Gold Rush → has effect → Black Hills Gold Rush</span>
+</div>
+<div class='question'>Q: Which entities have the Black Hills Gold Rush as an effect?</div>
+<div class='answer'>A: Newton-Jenney Party, Black Hills Gold Rush</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 12: Palermo</h3>
+<p><strong>Entry:</strong> 2hop__10515_21567 | <strong>Page:</strong> 17 | <strong>Questions:</strong> 45</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>As the Roman Empire was falling apart, Palermo fell under the control of several Germanic tribes. The first were the <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Vandals</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> in 440 AD under the rule of their king Geiseric. The <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Vandals</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> had occupied all the Roman provinces in <mark><mark><mark><mark><mark>North Africa</mark></mark></mark></mark></mark> by 455 establishing themselves as a significant force. They acquired <mark>Corsica, Sardinia</mark> and <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Sicily</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> shortly afterwards. However, they soon lost these newly acquired possessions to the <mark><mark><mark><mark><mark><mark><mark>Ostrogoths</mark></mark></mark></mark></mark></mark></mark>. The Ostrogothic conquest under <mark><mark>Theodoric the Great</mark></mark> began in 488; Theodoric supported Roman culture and government unlike the Germanic Goths. The Gothic War took place between the <mark><mark><mark><mark><mark><mark><mark>Ostrogoths</mark></mark></mark></mark></mark></mark></mark> and the Eastern Roman Empire, also known as the Byzantine Empire. <mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Sicily</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> was the first part of Italy to be taken under control of <mark><mark><mark><mark><mark><mark>General Belisarius</mark></mark></mark></mark></mark></mark> who was commissioned by Eastern Emperor. <mark>Justinian I</mark> solidified his rule in the following years.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>bamboo</span> 8 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: Which region did the Vandals gain territory from, given that Justinian I was valid in place in Sicily, which was owned by the Vandals?</div>
+<div class='answer'>A: North Africa</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: From which region did the Vandals gain territory, considering that the Ostrogoths applied jurisdiction over Sicily, which was owned by the Vandals?</div>
+<div class='answer'>A: North Africa</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which group were the Vandals opposed to, when Justinian I was valid in place in Sicily that was owned by the Vandals?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+</div>
+<div class='question'>Q: Who claimed territory in Sicily, given that the Vandals were in opposition to the Ostrogoths, who applied jurisdiction over Sicily?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: According to the chain where Justinian I was valid in place in Sicily owned by the Vandals, from which area did the Vandals acquire territory?</div>
+<div class='answer'>A: North Africa</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: Considering that the Ostrogoths applied jurisdiction over Sicily owned by the Vandals, from which region did the Vandals gain territory?</div>
+<div class='answer'>A: North Africa</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: In the scenario where Justinian I was valid in place in Sicily owned by the Vandals, which people were the Vandals opposed to?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+</div>
+<div class='question'>Q: Given that the Vandals opposed the Ostrogoths, who applied jurisdiction over Sicily, who claimed territory in Sicily?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>comp</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Roman government → endorsed by → Theodoric the Great</span>
+<span class='triplet'>Roman culture → endorsed by → Theodoric the Great</span>
+</div>
+<div class='question'>Q: Which was endorsed by Theodoric the Great, Roman government or Roman culture?</div>
+<div class='answer'>A: Roman government</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 16 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → owner of → Corsica</span>
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: Which group owned Corsica and also gained territory from North Africa?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → owner of → Corsica</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which group owned Corsica and was in opposition to the Ostrogoths?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which group gained territory from North Africa and was in opposition to the Ostrogoths?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+<span class='triplet'>Vandals → owner of → Sardinia</span>
+</div>
+<div class='question'>Q: Which group gained territory from North Africa and owned Sardinia?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+</div>
+<div class='question'>Q: Which region was owned by the Vandals and had its territory claimed by General Belisarius?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+<span class='triplet'>Vandals → owner of → Sardinia</span>
+</div>
+<div class='question'>Q: Which group was in opposition to the Ostrogoths and owned Sardinia?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which place was considered valid by Justinian I and also fell under the jurisdiction of the Ostrogoths?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → owner of → Corsica</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which group owned Corsica and also owned Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which group gained territory from North Africa and also owned Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+</div>
+<div class='question'>Q: Which region was owned by the Vandals and was considered valid by Justinian I?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which territory was owned by the Vandals and later placed under the jurisdiction of the Ostrogoths?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which group was in opposition to the Ostrogoths and also owned Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → owner of → Sardinia</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which people were the owner of Sardinia and also the owners of Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which people had jurisdiction over Sicily and were also in opposition to the Vandals?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+</div>
+<div class='question'>Q: Which territory was claimed by General Belisarius and also considered valid by Justinian I?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which region was claimed by General Belisarius and also placed under the jurisdiction of the Ostrogoths?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>mh</span> 10 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which group opposed the Vandals that had gained territory from North Africa?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+</div>
+<div class='question'>Q: Which general claimed the territory of Sicily that was owned by the Vandals?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which group had jurisdiction over Sicily where Justinian I's authority was also considered valid?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which region was owned by the Vandals who had gained territory from North Africa?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+</div>
+<div class='question'>Q: Who was recognized as having valid authority in Sicily that was owned by the Vandals?</div>
+<div class='answer'>A: Justinian I</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which group claimed jurisdiction over Sicily that was owned by the Vandals?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which territory was owned by the Vandals that were in opposition to the Ostrogoths?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: Which group opposed the Ostrogoths who exercised jurisdiction over Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+</div>
+<div class='question'>Q: Who claimed the territory of Sicily where Justinian I's rule was considered valid?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Who claimed Sicily that was under the jurisdiction of the Ostrogoths?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → owner of → Corsica</span>
+<span class='triplet'>Vandals → owner of → Sardinia</span>
+</div>
+<div class='question'>Q: Which territories are owned by the Vandals?</div>
+<div class='answer'>A: Corsica, Sardinia</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Roman government → endorsed by → Theodoric the Great</span>
+<span class='triplet'>Roman culture → endorsed by → Theodoric the Great</span>
+</div>
+<div class='question'>Q: Which entities are endorsed by Theodoric the Great?</div>
+<div class='answer'>A: Roman government, Roman culture</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 8 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → gained territory from → North Africa</span>
+</div>
+<div class='question'>Q: From which region did the Vandals gain territory?</div>
+<div class='answer'>A: North Africa</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → owned by → Vandals</span>
+</div>
+<div class='question'>Q: Which group owned Sicily?</div>
+<div class='answer'>A: Vandals</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Vandals → in opposition to → Ostrogoths</span>
+</div>
+<div class='question'>Q: The Vandals were in opposition to which people?</div>
+<div class='answer'>A: Ostrogoths</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Roman government → endorsed by → Theodoric the Great</span>
+</div>
+<div class='question'>Q: Who endorsed the Roman government?</div>
+<div class='answer'>A: Theodoric the Great</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Justinian I → valid in place → Sicily</span>
+</div>
+<div class='question'>Q: In which place was Justinian I's rule valid?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Ostrogoths → applies to jurisdiction → Sicily</span>
+</div>
+<div class='question'>Q: Which territory was under the jurisdiction of the Ostrogoths?</div>
+<div class='answer'>A: Sicily</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sicily → territory claimed by → General Belisarius</span>
+</div>
+<div class='question'>Q: Who claimed the territory of Sicily?</div>
+<div class='answer'>A: General Belisarius</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Roman culture → endorsed by → Theodoric the Great</span>
+</div>
+<div class='question'>Q: Who endorsed Roman culture?</div>
+<div class='answer'>A: Theodoric the Great</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 13: History of India</h3>
+<p><strong>Entry:</strong> 2hop__10515_21567 | <strong>Page:</strong> 18 | <strong>Questions:</strong> 2</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>Muslim rule started in parts of north India in the 13th century when the Delhi Sultanate was founded in 1206 CE by the <mark>Central Asia</mark>n Turks. The Delhi Sultanate ruled the major part of northern India in the early 14th century, but declined in the late 14th century when several powerful Hindu states such as the Vijayanagara Empire, Gajapati Kingdom, Ahom Kingdom, as well as Rajput dynasties and states, such as Mewar dynasty, emerged. The <mark>15th century</mark> saw the emergence of Sikhism. In the 16th century, Mughals came from <mark>Central Asia</mark> and gradually covered most of India. The Mughal Empire suffered a gradual decline in the early 18th century, which provided opportunities for the Maratha Empire, Sikh Empire and Mysore Kingdom to exercise control over large areas of the subcontinent.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Sikhism → start period → 15th century</span>
+</div>
+<div class='question'>Q: In which century did Sikhism start?</div>
+<div class='answer'>A: 15th century</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Mughals → country of origin → Central Asia</span>
+</div>
+<div class='question'>Q: What was the country of origin of the Mughals?</div>
+<div class='answer'>A: Central Asia</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 14: Roman conquest of Britain</h3>
+<p><strong>Entry:</strong> 2hop__10515_21567 | <strong>Page:</strong> 19 | <strong>Questions:</strong> 4</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/>The Roman conquest of <mark><mark>Britain</mark></mark> was a gradual process, beginning effectively in AD 43 under Emperor Claudius, whose general Aulus Plautius served as first governor of Roman <mark><mark>Britain</mark></mark> (Latin: Britannia). Great <mark><mark>Britain</mark></mark> had already frequently been the target of invasions, planned and actual, by forces of the Roman Republic and Roman Empire. In common with other regions on the edge of the empire, <mark><mark>Britain</mark></mark> had enjoyed diplomatic and trading links with the Romans in the century since Julius Caesar's expeditions in 55 and 54 BC, and Roman economic and cultural influence was a significant part of the British late pre-Roman Iron Age, especially in the south.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 2 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Britain → influenced by → Roman cultural influence</span>
+<span class='triplet'>Britain → part of → Roman Britain</span>
+</div>
+<div class='question'>Q: Which region was both influenced by Roman cultural influence and part of Roman Britain?</div>
+<div class='answer'>A: Britain</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Britain → part of → Roman Britain</span>
+<span class='triplet'>Britain → influenced by → Roman economic influence</span>
+</div>
+<div class='question'>Q: Which territory was part of Roman Britain and also influenced by Roman economic influence?</div>
+<div class='answer'>A: Britain</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>set</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Britain → influenced by → Roman cultural influence</span>
+<span class='triplet'>Britain → influenced by → Roman economic influence</span>
+</div>
+<div class='question'>Q: What was Britain influenced by?</div>
+<div class='answer'>A: Roman cultural influence, Roman economic influence</div>
+</div>
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>simple</span> 1 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Britain → part of → Roman Britain</span>
+</div>
+<div class='question'>Q: Britain was part of which region?</div>
+<div class='answer'>A: Roman Britain</div>
+</div>
+</div>
+</div>
+<div class='context-card'>
+<div class='context-header'>
+<h3>Context 15: Huns</h3>
+<p><strong>Entry:</strong> 2hop__10515_21567 | <strong>Page:</strong> 2 | <strong>Questions:</strong> 12</p>
+</div>
+<div class='context-text'>
+<strong>Text:</strong><br/><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark><mark>Bleda</mark></mark></mark></mark></mark></mark></mark></mark></mark></mark></mark> died in 445, with some historians speculating that his death was at the hands of Attila. With his brother gone, Attila was able to establish undisputed control over his subjects. In 447, Attila turned the Huns back toward the <mark>Eastern Roman Empire</mark> once more. His invasion of the Balkans and Thrace was devastating. The <mark>Eastern Roman Empire</mark> was already beset by internal problems, such as famine and plague, as well as riots and a series of earthquakes in Constantinople itself. A last - minute rebuilding of its walls preserved Constantinople unscathed. Victory over a Roman army left the Huns virtually unchallenged in Eastern Roman lands and they raided as far south as Thermopylae. Only disease forced them to retreat, and the war came to an end in 449 with an agreement in which the Romans agreed to pay Attila an annual tribute of 2100 pounds of gold. Our only first - hand account of conditions among the Huns and of Attila himself is by Priscus, an official in the peace embassy to Attila.
+</div>
+<div class='qa-section'>
+<div class='qa-header'><span class='query-type'>cond</span> 12 questions</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → relative to → Bleda</span>
+<span class='triplet'>Bleda → date of death → 445.0</span>
+</div>
+<div class='question'>Q: Which individual is both related to Bleda and recorded as having died in 445?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → relative to → Bleda</span>
+<span class='triplet'>Bleda → gained territory from → Eastern Roman Empire</span>
+</div>
+<div class='question'>Q: Which figure is both related to Bleda and known to have gained territory from the Eastern Roman Empire?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → relative to → Bleda</span>
+<span class='triplet'>Bleda → significant event → established control over his subjects</span>
+</div>
+<div class='question'>Q: Which person is both related to Bleda and credited with the significant event of establishing control over his subjects?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → significant event → established control over his subjects</span>
+<span class='triplet'>Bleda → date of death → 445.0</span>
+</div>
+<div class='question'>Q: Which individual is associated with the significant event of establishing control over his subjects and also recorded to have died in 445?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → significant event → established control over his subjects</span>
+<span class='triplet'>Bleda → gained territory from → Eastern Roman Empire</span>
+</div>
+<div class='question'>Q: Which leader is linked to the significant event of establishing control over his subjects and also gained territory from the Eastern Roman Empire?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → gained territory from → Eastern Roman Empire</span>
+<span class='triplet'>Bleda → date of death → 445.0</span>
+</div>
+<div class='question'>Q: Which figure both gained territory from the Eastern Roman Empire and died in 445?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → relative to → Bleda</span>
+<span class='triplet'>Balkans → territory claimed by → Bleda</span>
+</div>
+<div class='question'>Q: Which person is both described as relative to Bleda and is the claimant of the Balkans' territory?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → relative to → Bleda</span>
+<span class='triplet'>Roman army → defender → Bleda</span>
+</div>
+<div class='question'>Q: Which individual is both described as relative to Bleda and was defended by the Roman army?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Roman army → defender → Bleda</span>
+<span class='triplet'>Balkans → territory claimed by → Bleda</span>
+</div>
+<div class='question'>Q: Which person was defended by the Roman army and also is the one claimed by the Balkans as territory?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → significant event → established control over his subjects</span>
+<span class='triplet'>Balkans → territory claimed by → Bleda</span>
+</div>
+<div class='question'>Q: Which leader is associated with the significant event of establishing control over his subjects and also is the claimant of the Balkans' territory?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Bleda → significant event → established control over his subjects</span>
+<span class='triplet'>Roman army → defender → Bleda</span>
+</div>
+<div class='question'>Q: Which leader, whose significant event was establishing control over his subjects, was defended by the Roman army?</div>
+<div class='answer'>A: Bleda</div>
+</div>
+<div class='qa-item'>
+<div style='margin-bottom: 8px;'>
+<strong>Path:</strong> 
+<span class='triplet'>Eastern Roman Empire → destination of transfer → annual tribute</span>
+<span class='triplet'>Bleda → gained territory from → Eastern Roman Empire</span>
+</div>
+<div class='question'>Q: Which entity received the annual tribute as its destination of transfer and also gained territory from Bleda?</div>
+<div class='answer'>A: Eastern Roman Empire</div>
+</div>
+</div>
+</div>
+</body>
+</html>
