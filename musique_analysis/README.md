@@ -14,11 +14,11 @@ Multi-hop question-answering dataset generated from musique_gpt4_batch_gpt_oss u
 
 | Metric | Value |
 |--------|-------|
-| Total Records | 148,664 |
-| Records with QA | 148,664 (100.0%) |
-| Unique Entry IDs | 309 |
-| Unique Pages | 4,433 |
-| Total Triplets | 277,026 |
+| Total Records | 510,101 |
+| Records with QA | 510,101 (100.0%) |
+| Unique Entry IDs | 1,000 |
+| Unique Pages | 9,659 |
+| Total Triplets | 956,154 |
 
 ## Distributions Overview
 
@@ -72,4 +72,4 @@ Multi-hop question-answering dataset generated from musique_gpt4_batch_gpt_oss u
 ```
 
 ---
-*Generated: 2026-03-13 11:26:39*
+*Generated: 2026-03-16 11:25:30*
